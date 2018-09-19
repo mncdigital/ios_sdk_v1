@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@import SafariServices;
+
+@interface ViewController : UIViewController <SFSafariViewControllerDelegate>
 
 - (void)loginCallback:(NSDictionary*)dict;
 
